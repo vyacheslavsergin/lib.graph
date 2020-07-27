@@ -1,0 +1,15 @@
+@import '../styles/full-width.scss';
+@import '../styles/media.config.scss';
+
+.line-chart-wrapper {
+  margin-left: $sm-offset-width-negative;
+  margin-right: -24px;
+
+  @include tablet {
+    margin: 0 -24px;
+  }
+}
+
+.line-chart-container {
+  max-width: 100%;
+}

@@ -1,0 +1,18 @@
+@import '../../styles/colors.config.scss';
+@import '../../styles/font-sizes.config.scss';
+
+.rect {
+  fill: $white;
+  stroke-width: 1px;
+  stroke: #ebebec;
+}
+
+.text {
+  font-size: $font-size-sm;
+  letter-spacing: $letter-spacing-web;
+  fill: #888888;
+}
+
+.is-hidden {
+  visibility: hidden;
+}

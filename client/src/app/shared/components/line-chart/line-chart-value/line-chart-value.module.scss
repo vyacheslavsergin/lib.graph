@@ -1,0 +1,17 @@
+@import '../../../../../styles/colors.config.scss';
+@import '../../../../../styles/offsets.config.scss';
+
+.line-chart-value {
+  color: $app-gray-3;
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: $offset-sm;
+
+  &.is-positive {
+    color: $green-5;
+  }
+
+  &.is-negative {
+    color: $orange-5;
+  }
+}

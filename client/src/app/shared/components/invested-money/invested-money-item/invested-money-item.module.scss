@@ -1,0 +1,32 @@
+@import '../../../../../styles/offsets.config.scss';
+@import '../../../../../styles/colors.config.scss';
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.circle {
+  background-color: $black-100;
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  height: 8px;
+  margin-top: $offset-xs;
+  margin-right: $offset-sm;
+  width: 8px;
+}
+
+.title {
+  word-break: break-word;
+}
+
+.col-1 {
+  display: flex;
+  padding-right: $offset-md2;
+}

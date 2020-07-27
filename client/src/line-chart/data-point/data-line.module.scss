@@ -1,0 +1,10 @@
+@import '../../styles/colors.config.scss';
+
+.line {
+  stroke-width: 2px;
+  stroke: $gray-2;
+}
+
+.is-hidden {
+  display: none;
+}

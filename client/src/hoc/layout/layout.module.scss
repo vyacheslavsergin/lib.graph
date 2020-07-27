@@ -1,0 +1,29 @@
+@import '../../styles/media.config';
+
+.main {
+  display: flex;
+  flex-grow: 1;
+
+  @include tablet {
+    margin-left: 64px;
+  }
+
+  @include desktop-wide {
+    margin-left: 320px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 368px;
+  min-width: auto;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 608px;
+  }
+
+  @include desktop {
+    max-width: 928px;
+  }
+}

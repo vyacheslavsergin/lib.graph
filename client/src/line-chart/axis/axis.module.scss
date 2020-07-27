@@ -1,0 +1,60 @@
+@import '../../styles/colors.config.scss';
+@import '../../styles/font-sizes.config.scss';
+
+.x-axis {
+  :global {
+    .domain {
+      color: $gray-2;
+    }
+
+    .tick {
+      text {
+        color: #8c8c91;
+        font-size: $font-size-sm;
+        letter-spacing: -0.3px;
+      }
+
+      line {
+        stroke: $gray-2;
+      }
+    }
+  }
+}
+
+.y-axis {
+  :global {
+    text {
+      display: none;
+    }
+  }
+}
+
+.y-axis,
+.y-axis-right {
+  :global {
+    .domain {
+      stroke: none;
+    }
+
+    .tick {
+      text {
+        color: #8c8c91;
+        font-size: $font-size-sm;
+        letter-spacing: -0.3px;
+      }
+
+      line {
+        stroke: $no-color;
+
+        &.is-active {
+          stroke: #adadb4;
+          stroke-dasharray: 2.2;
+        }
+      }
+    }
+  }
+}
+
+//.tick {
+//  transform: translate(50px, 0);
+//}

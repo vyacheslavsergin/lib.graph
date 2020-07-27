@@ -1,0 +1,62 @@
+@import '../../../../styles/media.config.scss';
+@import '../../../../styles/colors.config.scss';
+@import '../../../../styles/offsets.config';
+
+.title {
+  margin-bottom: $offset-lg;
+}
+
+.circle-diagram-component {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.headline {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+
+  @include desktop {
+    width: 70%;
+  }
+}
+
+.circle-diagram-wrapper {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.button-wrapper {
+  margin-top: 12px;
+  width: 100%;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  padding-left: 16px;
+
+  @include tablet {
+    padding-left: 40px;
+  }
+
+  @include desktop {
+    padding-left: 40px;
+  }
+}
+
+.show-more {
+  border-bottom: 2px dashed $app-green-1;
+  color: $app-green-1;
+  transition: border-bottom 0.3s linear;
+
+  &:hover {
+    border-bottom: 2px dashed $no-color;
+  }
+}
