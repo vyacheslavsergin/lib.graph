@@ -42,6 +42,7 @@ export const CircleDiagram = ({ data, options }) => {
     .arc()
     .innerRadius(innerRadius)
     .outerRadius(radius)
+    .padAngle(padAngle)
 
     const paths = g
     .selectAll('path')
@@ -63,6 +64,7 @@ export const CircleDiagram = ({ data, options }) => {
     .arc()
     .innerRadius(innerRadius)
     .outerRadius(radius)
+    .padAngle(padAngle)
 
     paths.attr('d', arcPath)
   }

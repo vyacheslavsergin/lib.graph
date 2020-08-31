@@ -19,10 +19,6 @@
 .content {
   display: flex;
   width: 100%;
-
-  @include desktop {
-    width: 70%;
-  }
 }
 
 .circle-diagram-wrapper {
@@ -47,7 +43,7 @@
   }
 
   @include desktop {
-    padding-left: 40px;
+    padding-left: 64px;
   }
 }
 
